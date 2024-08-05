@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BryFlix</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-brand">
+      <span class="app-name">Flix</span>
+    </div>
+
+    <nav class="navbar-menu">
+      <ul>
+        <li><a href="#filmes">Filmes</a></li>
+        <li><a href="#series">Séries</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="filmes-bombando" class="movie-section">
+      <h2>Filmes Bombando</h2>
+<p> confira todos aqui</p>
+      <div class="movies-container">
+        <img src="filmes/atlas.jpg" alt="Movie 1" class="movie" onclick="continueWatching(this)">
+        <img src="filmes/bad boys.jpg" alt="Movie 2" class="movie" onclick="continueWatching(this)">
+        <img src="filmes/sisu.jpeg" alt="Movie 3" class="movie" onclick="continueWatching(this)">
+        <img src="filmes/ilha do medo.jpg" alt="Movie 4" class="movie" onclick="continueWatching(this)">
+        <img src="filmes/corra.jpg" alt="Movie 5" class="movie" onclick="continueWatching(this)">
+        <img src="filmes/premonição.jpeg" alt="Movie 6" class="movie" onclick="continueWatching(this)">
+        <img src="filmes/madrugada dos mortos.jpeg" alt="Movie 7" class="movie" onclick="continueWatching(this)">
+        <!-- Adicione mais filmes conforme necessário -->
+      </div>
+    </section>
+
+    <section id="continuar-assistindo" class="movie-section">
+      <h2>Continuar Assistindo</h2>
+      <div class="movies-container" id="continuar-assistindo-container">
+        <!-- Filmes para continuar assistindo aparecerão aqui -->
+      </div>
+      <button onclick="limparContinuarAssistindo()">Limpar Lista</button>
+    </section>
+
+    <section id="netflix" class="movie-section">
+      <h2>Netflix</h2>
+      <div class="movies-container">
+        <img src="filmes/atlas.jpg" alt="Movie 1" class="movie" onclick="continueWatching(this)">
+        <img src="filmes/destinos a deriva.jpg" alt="Movie 2" class="movie" onclick="continueWatching(this)">
+        <img src="filmes/rebel moon - parte 1.jpg" alt="Movie 3" class="movie" onclick="continueWatching(this)">
+        <img src="filmes/shaitaan.jpeg" alt="Movie 4" class="movie" onclick="continueWatching(this)">
+        <img src="filmes/corra.jpg" alt="Movie 5" class="movie" onclick="continueWatching(this)">
+        <img src="filmes/premonição.jpeg" alt="Movie 6" class="movie" onclick="continueWatching(this)">
+        <img src="filmes/madrugada dos mortos.jpeg" alt="Movie 7" class="movie" onclick="continueWatching(this)">
+        <!-- Adicione mais filmes conforme necessário -->
+      </div>
+    </section>
+
+    <section id="series" class="movie-section">
+      <h2>Séries</h2>
+      <div class="movies-container">
+        <img src="series/bridgerton.jpg" alt="Série 1" class="movie" onclick="continueWatching(this)">
+        <img src="series/breaking bad.jpeg" alt="Série 2" class="movie" onclick="continueWatching(this)">
+        <img src="series/black mirror.jpg" alt="Série 3" class="movie" onclick="continueWatching(this)">
+        <img src="series/the boys.jpeg" alt="Série 4" class="movie" onclick="continueWatching(this)">
+        <img src="series/prison break.jpg" alt="Série 5" class="movie" onclick="continueWatching(this)">
+        <img src="series/casa do dragão.jpeg" alt="Série 6" class="movie" onclick="continueWatching(this)">
+        <img src="series/barry.jpg" alt="Série 7" class="movie" onclick="continueWatching(this)">
+        <img src="series/twisted metal.jpg" alt="Série 8" class="movie" onclick="continueWatching(this)">
+        <!-- Adicione mais séries conforme necessário -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

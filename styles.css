@@ -1,0 +1,110 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para a barra de navegação */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #141414;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand .app-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e50914;
+  text-transform: uppercase;
+}
+
+.navbar-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu ul li {
+  display: inline;
+}
+
+.navbar-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-menu ul li a:hover {
+  color: #e50914;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .navbar-brand .app-name {
+    font-size: 20px;
+  }
+
+  .navbar-menu ul {
+    gap: 10px;
+  }
+
+  .navbar-menu ul li a {
+    font-size: 14px;
+  }
+}
+
+/* Estilo para as seções de filmes */
+.movie-section {
+  margin: 20px;
+}
+
+.movie-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movies-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.movies-container::-webkit-scrollbar {
+  display: none;
+}
+
+.movie {
+  width: 150px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff0f33;
+}
